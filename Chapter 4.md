@@ -1,36 +1,23 @@
-# Chapter 4
-- Files and directories
-    - `mkdir` done
-    - `touch` done
-    - `rm`     done
-    - `cp`    done
-    - `mv`
-    - *`ln`*
-  - Help
-    - `man`
-    - `apropos`
-    - `--help`
-_ _ _ 
 # 📂Create Directories
----
+
 * **`mkdir DirectoryName`**
 This command will create a new directory, provided it doesn't exists.
 
->*Example :*
-> Create a new directory his name is Test.
-![alt text](Images/mkdir.png)
+*Example :* Create a new directory his name is Test.
+
+> Osc@Osc:~$ mkdir Test
 
 * **`mkdir -p Directory/SubDirectory1/SubDirectory2`**
 
 This command will create nested directories.
 
->*Example:* 
->Create nested directories, **world** directory which is inside the **hello** directory which is inside the**program**directory.![alt text](Images/Subdir.png)
+*Example:*  Create nested directories, **world** directory which is inside the **hello** directory which is inside the **program** directory.
 
+>Osc@Osc:~$ mkdir -p program/hello/world
 
 ---
 # 📄**Creating Files**
----
+
 
 * **`touch fileName`**
 This command will create a new file.
@@ -41,6 +28,7 @@ This command will create a new file.
 
 ---
 # Renaming & Moving Files
+`mv `comm
 ---
 # Copying Files & Directories
 
@@ -49,8 +37,10 @@ With the `mv` command, you could move or rename a file or directory, but you cou
 This command can make a new copy of an existing item
   
 >*Example :* 
+>
 >copy `source.txt` file to a new file called `copy.txt`.
-![alt text](<Images/copy files.png>)
+>
+>![alt text](<Images/copy files.png>)
 
 * `cp -r SourceDir CopyDir`
 Copy entire directories, you must include the -r option to the command. This stands for “recursive”, as it copies the directory, plus all of the directory’s contents.
@@ -61,7 +51,7 @@ Copy entire directories, you must include the -r option to the command. This sta
 
 ---
 # Removing Directories & Files
----
+
 
 | *Command* | *Description*📝 |
 | ---- |----|
@@ -74,3 +64,10 @@ Copy entire directories, you must include the -r option to the command. This sta
 
 ---
 
+# Getting Help !!
+
+* **`man`**
+* **`apropos`**
+Apropos will list several commands that match the keyword you used. The list includes a short description of what the command does.works by looking through the entire description sections of the man pages for the matching keyword you provide with the apropos command
+The word apropos is derived from the French word "à propos" which means **"about."**
+* **`--help`**
