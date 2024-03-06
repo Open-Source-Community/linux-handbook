@@ -52,7 +52,7 @@ This command is also used to rename files and directories. In essence, moving an
 osc@osc:~$ mv file1.txt file2.txt
 ```
 ---
-# Copying Files & Directories
+# 📑Copying Files & Directories
 
 `mv` command, you could move or rename a file or directory, but you could not duplicate it. 
 *  **`cp SourceFile CopyFile`** 
@@ -74,7 +74,7 @@ Copy entire directories, you must include the -r option to the command. This sta
 osc@osc:~$ cp -r test1 test2
 ```
 ---
-# Removing Directories & Files
+# 📤 Removing Directories & Files
 
 
 | *Command* | *Description*📝 |
@@ -97,7 +97,7 @@ This command can display the manual pages (documentation) for various commands a
 >**Example:** View the manual page for the **ls** command (which lists directory contents).
 
 ```
-man ls
+osc@osc:~$ man ls
 ```
 - **`apropos`**
     - Apropos will list several commands that match the keyword you used. 
@@ -113,5 +113,5 @@ Most commands have the `--help` command argument or option. You can use it to di
 
 >**Example:** get more help on the **cp** command.
 ```
- cp --help
+osc@osc:~$ cp --help
 ```
