@@ -1,28 +1,28 @@
-# compressing file
+# Compressing file
 
-## what is data compression?
+## What is data compression?
 
 Data compression is the process of encoding or modifying data using functions or an algorithm to reduce its size. Fundamentally, it involves re-encoding information using fewer bits than the original representation.
 
-## why data compression?
+## Why data compression?
 
-data compression is important for reducing file size to be transferred easily and use less space when stored.
+Data compression is important for reducing file size to be transferred easily and use less space when stored.
 
 ## Compressing files in Linux
 
-files in Linux can be compressed or decompressed using the **`gzip`** tool.
+Files in Linux can be compressed or decompressed using the **`gzip`** tool.
 
-### compresssing files
+### Compresssing files
 
-use `gzip filename` and it will be compressed and replaced with the compressed file `filename.gz`.
+Use `gzip filename` and it will be compressed and replaced with the compressed file `filename.gz`.
 
-### decompressing files
+### Decompressing files
 
-you can decompress files compressed by `gzip` by adding flag `-d` to the command so it becomes `gzip -d filename.gz`.
+You can decompress files compressed by `gzip` by adding flag `-d` to the command so it becomes `gzip -d filename.gz`.
 
 ### Other useful flags
 
-there are plenty of flags that can be used and there is some of them
+There are plenty of flags that can be used and there is some of them
 
 - `-k` keeps the original file and makes a new file for the compressed one.
 - `-l` for compressed files it show:
@@ -37,13 +37,13 @@ there are plenty of flags that can be used and there is some of them
 
 ## What is archiving
 
-process of bundling multiple files or directories into a single file for future reference. Archiving directories can help in compressing them and save storage.
+Process of bundling multiple files or directories into a single file for future reference. Archiving directories can help in compressing them and save storage.
 
 ## Archiving in Linux
 
 The `tar` command is used to archive files or directories by this format `tar [option] [archive-file] [filename]`.
 
-### flag options
+### Flag options
 
 - `-f` is a mandatory flag to create an archive with a specific name.
 - `-c` for creating archives.
