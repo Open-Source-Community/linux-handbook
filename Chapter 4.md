@@ -74,6 +74,7 @@ osc@osc:~$ mv file1.txt file2.txt
 # Copying Files & Directories
 
 `mv` command, you could move or rename a file or directory, but you could not duplicate it. 
+
 **1. `cp SourceFile CopyFile`** 
 
 - This command can make a new copy of an existing item
