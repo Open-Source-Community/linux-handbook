@@ -1,3 +1,12 @@
+# Chapter 4: Understanding the File System 
+
+- In Linux, most of the operations are performed on files. And to handle these files Linux has directories also known as folders which are maintained in a tree-like structure. Though, these directories are also a type of file themselves. 
+  
+- *Linux has 3 types of files:*
+    - **Regular Files:** It is the common file type in Linux. it includes files like – text files, images, binary files, etc. Such files can be created using the `touch command`. They consist of the majority of files in the Linux/UNIX system. The regular file contains ASCII or Human Readable text, executable program binaries, program data and much more.
+    - **Directories:** These are the files that store the list of file names and the related information. `The root directory(/)` is the base of the system, `/home/` is the default location for user’s home directories, /bin for Essential User Binaries, `/boot` – Static Boot Files, etc. We could create new directories with `mkdir command`.
+   - **Special Files:** Represents a real physical device such as a printer which is used for IO operations. Device or special files are used for device Input/Output(I/O) on UNIX and Linux systems. You can see them in a file system like an ordinary directory or file.
+  
 # Creating Directories
 
 **1. `mkdir DirectoryName`**
@@ -86,8 +95,33 @@ osc@osc:~$ cp -r test1 test2
 ---
 # Removing Directories & Files
 
+**1) `rm filename`**
 
-| *Command* | *Description*📝 |
+- this command could be used to delete a file. 
+>
+- To remove **test** file from the directory, you can type:
+>
+```
+osc@osc:~$ rm test 
+```
+**2) `rmdir directoryname`**
+
+- Remove empty directories, this will only succeed if there is nothing in the directory in question. Let's remove **example** directory within the **testing** directory:
+>
+```
+osc@osc:~$ rmdir testing/example 
+```
+
+**3) `rm -r directoryname`**
+- To remove a *non-empty* directory, you will use the rm command with the -r option, which removes all of the directory’s contents recursively, plus the directory itself.
+>
+- To remove the **Testing** directory and everything within it, you can type:
+
+```
+osc@osc:~$ rm -r Testing
+```
+>
+| *Command* | *Description* |
 | ---- |----|
 | **`rm filename`** |Deletes a file|
 | **`rm -f filename`** |Deletes by force and don't prompt the user|
@@ -110,6 +144,7 @@ osc@osc:~$ cp -r test1 test2
 osc@osc:~$ man ls
 ```
 ![alt text](<Images/man command.png>)
+
 **2) `apropos`**
 - Apropos will list several commands that match the keyword you used. 
 >
@@ -126,7 +161,7 @@ osc@osc:~$ apropos copy
 
 Most commands have the `--help` command argument or option. You can use it to display helpful information about how a command is used and its arguments in a simplified manner.
 
-Get more help on the **cp** command.
+Get more help on the **cp** command by typing:
 ```
 osc@osc:~$ cp --help
 ```
