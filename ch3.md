@@ -8,11 +8,37 @@ ___
 ### Some Commands
 
 * **echo** : Display a line of a text.  
-**Syntax** : `echo text`.
+**Syntax** : echo [option] [text]    
 ```
  OSC@OSC:~$ echo Hello World
  Hello World
  ```
+
+| Command                  | Description |
+|--------------------------|-------------|
+| `echo "text" > filename` | redirects the output of echo to a specific file creating the file if it does not exist and overwriting it if it does.|
+|`echo "text" >> filename`|appends the text to a specific file| 
+
+|Option |Usage|
+|--------|-----|
+|-n |    do not output the trailing newline|
+|-e|  enable interpretation of backslash escapes|
+| -E  |   disable interpretation of backslash escapes (default)|  
+```
+OSC@OSC:~$ echo -n "Hello, "
+echo "World!"
+Hello, World!
+```
+```
+OSC@OSC:~$ echo -e "Hello\nWorld"
+Hello
+World
+```
+```
+OSC@OSC:~$ echo -E "Hello\nWorld"
+Hello\nWorld
+```
+
 
 
 * **clear** : Clear the screen.   
@@ -50,17 +76,16 @@ For example, there is a directory on our system in which most of our system's pr
 
 ##### Relative Path :
  Where an absolute pathname starts from the root directory and leads to its destination, a relative pathname starts from the working directory.  
-  >The "." notation refers to the working directory  
+  * The "." notation refers to the working directory and the ".." notation refers to the working directory's parent directory.  
   
-  > the working directory here is "usr"
+  *  the working directory here is "usr"
   ```
   OSC@OSC:/usr/$ cd ./bin
  OSC@OSC:/usr/bin$ pwd
  /usr/bin
  ```
    
- > In almost all cases, we can omit the "./"  
- >For example:
+ *  In almost all cases, we can omit the "./"  
  ```
   OSC@OSC:/usr/$ cd bin
  OSC@OSC:/usr/bin$ pwd
@@ -70,21 +95,36 @@ For example, there is a directory on our system in which most of our system's pr
  ___
  ### Some Commands
  * **pwd** : Prints the absolute path of the current working directory.  
- **Syntax** : `pwd`.
- ```  
+ **Syntax** : `pwd`.  
+
+```  
   OSC@OSC:~/Downloads$ pwd
   /home/OSC/Downloads
  ```
+
+
+
+ 
    
  * **ls** : List directory contents.  
- **Syntax** : `ls directory_name`
+ **Syntax** : `ls [option] [file]`
  ```. 
   OSC@OSC:~$ ls
- Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+  Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
  ```
+ * Besides the current working directory, we can specify the directory to list:
+ ```
+ OSC@OSC:~$ ls /home
+ OSC
+ ```
+ | Option | Usage |
+|--------|-------|
+|-l|displays detailed information about files|
+|-a|list all files including the hidden files|
+|-t|Sort files by modification time, with the newest files appearing first|
+|-r|Reverse the order of the sort to display files in reverse order|
+|-S|Sort files by size, with the largest files appearing first|
  
- >Actually, we can use the ls command to list the contents of any directory, not just the
-current working directory.  
 * **cd** :  Change directory.  
 To change our working directory (where we are standing in our tree-shaped maze) we use
 the cd command.  
@@ -93,15 +133,29 @@ the cd command.
  OSC@OSC:~$ cd /home/OSC/Downloads
  OSC@OSC:~/Downloads$
 ```
- >Now ,our working directory here is Downloads.
+ * Now ,our working directory here is Downloads.
+
+ | Command | Usage |
+|--------|-------|
+| `cd ..` | Change the current working directory to the parent directory of the current directory|
+| `cd` | Change the working directory to your home directory|
+|`cd -` |Changes the working directory to the previous working directory|
+|`cd ~user_name` |Changes the working directory to the home directory of user_name|
  ___
  ### Exploring Commands
- * **cat** : Display contents of a file.  
- **Syntax** : `cat file_name`.
+ * **cat** : Display contents of a file,concatenate files and print on the standard output.  
+ **Syntax** : `cat [option] [file]
+`.
  ```
   OSC@OSC:~/Documents$ cat myFile
   hello world
  ```
+ | Option | Usage |
+|--------|-------|
+|-n| Number the lines of the output|
+|-s| suppress repeated empty output lines|
+|-E| Display a dollar sign ($) at the end of each line|
+
  
  * **file** : Determine file type.   
  **Syntax** : `file file_name`.
