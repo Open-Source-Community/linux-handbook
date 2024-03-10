@@ -1,3 +1,103 @@
+# Chapter 1 : Open Source Community
+
+## Open Source Philosophy
+Open Source is a software development movement that encourages on open collaboration, freely development .. belief that the source code of software should be available to anyone & this movement has improved the software industry to an unlimited way.
+
+
+## Open Source Community ASU
+
+Open source Community ASU is a community started in 2013, with a group of students who were passionate about the idea of open source, linux & software development.
+
+Our vision & duty is to spreed the importance of using open source tools & developing your softskills, as a way to improve your skills for your career path.
+
+
+### Here's Fun Facts about us: 
+
+- We started with only 7 students (Geeks) in 2013, at "Said Abdelwahab Hall" with labtobs & banners: telling other students about LINUX, why to use it & any Linux support for them.
+
+- We are not only a technical community, we also have committees for soft skills & designing (10 committees in total) such as:
+    - Blender 3D committee 
+    - Ui/Ux & Design committee
+    - Content Creation committee (CCC)
+
+- We usually held events & workshops:
+    - Get to Git' & Get to Linux' events
+    - Linux Distributions Party
+    - El Salakhana 
+    - OSC Summer Training
+    - Docker Workshop - last MidYear holiday 2024
+    - Technical Workshops: Linux | Game development | Web 
+    - Non-Technical Workshops: Blender | Ux & Design | CCC workshops 
+
+
+- We are the community who created "The Employment Fair" 1st edition in 2017, it was held in FCIS then replaced in the university campus.
+
+Then days after days, Years after years, here we are celebrating our 10s year, hope to give more value for open source & Ain Shams community.
+
+---
+---
+---
+
+# Chapter 2 : Linux History
+
+## Difference between OS and Kernel
+
+### ●  What is the Operating system (OS):
+Is system program that provides interface between user and computer .. as it manages all the software(SW) & hardware(HW) on the computer.
+
+### How OS manages apps:
+there are several different computer programs running at the same time, need to access your computer's central processing unit (CPU), memory, and storage .. so OS coordinates all this to make sure every program gets only it's need. 
+
+---
+
+### ● What is Kernel & How it works:
+
+A kernel is the core component of the operating system.
+
+- It's the first program of operating system that is loaded into the main memory to start the working of system .. and remains in memory till the system is shut down.
+
+- Kernal acts as a bridge between application SW & HW of the system .. as it directly communicates with the HW & let it know which SW app has requested.
+
+.
+![OS-Kernal Photo](https://raw.githubusercontent.com/SalmaAlassal/BeRoot/main/Introduction%20to%20Linux/imgs/OS-Kernel.png) 
+
+.
+### ● Kernel Creator:
+
+Kernal has been created by one of the greatest developers ever called: Linus Torvalds 
+
+But linux OS itself was created by a collaboration work by: GNU & Linus.
+
+But the question here, What is GNU?
+
+### ● What's GNU:
+
+GNU is an acronym for: GNU’s Not UNIX. The founder of the GNU project is Richard Stallman.
+
+The GNU project is a replacement for UNIX, was created to produce a free software alternative to Unix, and were able to produce most of the programs of the OS but not the Kernel (it was hard to implement acually).
+
+### ●  Popular Linux Distributions:
+
+- Ubuntu
+- Fedora OS
+- Linux Mint
+- Pop_OS!
+- Red Hat Linux
+- Arch
+- Manjaro
+
+### Diffrences between distros are deppending on what you want to do, For Example: 
+ - Usual users (Ubuntu)
+ - Developer (Most of Linux Distros: Ubuntu, Fedora, Debian)
+ - Artists & music production (Arcolinux)
+ - Coporate org. (Red Hat Linux)
+ - Lightweight flexible Linux distr (Arch Linux)
+ - Cyper Security specialists (Kali Linux)
+ 
+---
+---
+---
+
 # Chapter 4: Understanding the File System 
 
 - In Linux, most of the operations are performed on files. And to handle these files Linux has directories also known as folders which are maintained in a tree-like structure. Though, these directories are also a type of file themselves. 
@@ -144,7 +244,7 @@ osc@osc:~$ rm -r Testing
 ```
 osc@osc:~$ man ls
 ```
-![alt text](<Images/man command.png>)
+![alt text](<CH4 images/man command.png>)
 
 **2) `apropos`**
 - Apropos will list several commands that match the keyword you used. 
@@ -166,4 +266,4 @@ Get more help on the **cp** command by typing:
 ```
 osc@osc:~$ cp --help
 ```
-![alt text](<Images/--help command.png>)
+![alt text](<CH4 images/--help command.png>)
