@@ -32,8 +32,15 @@ There are plenty of flags that can be used and there is some of them
     2. uncompressed size
     3. the ratio between them
 - `-r` used in directories to recursively compress all files inside it
+```
+osc@osc:-$ gzip -r Directory
+ ```
+ All files within this directory is going to be compressed.
+
 - `-1` - `-9` is used to regulate the speed and compression level, where `-1` is the fastest (less compression) and `-9` indicates the slowest (best compression). *default compression level is `-6`*.
 - `-h` display help screen.
+
+> **Note:**  You can use `ls -l` command to monitor file size before and after compression.
 
 # Archiving directories
 
@@ -59,5 +66,10 @@ osc@osc:-$ tar -czf Directory.tar.gz Directory
  ```
 
  This example will creat a new archive for Directory called Directory.tar.gz then commpress it using `gzip`.
+
+ ```
+osc@osc:-$ tar -uf Directory.tar file.txt
+ ```
+Add file.txt to the existing archive Directory.tar
 
  > **Note:** `.tar` and `.gz` are prefered for users but its not mandatory and not used by the computer.
