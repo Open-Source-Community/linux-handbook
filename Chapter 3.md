@@ -10,7 +10,7 @@ ___
 * **echo** : Display a line of a text.  
 **Syntax** : echo [option] [text]    
 ```
- OSC@OSC:~$ echo Hello World
+ osc@osc:~$ echo Hello World
  Hello World
  ```
 
@@ -25,17 +25,17 @@ ___
 |-e|  enable interpretation of backslash escapes|
 | -E  |   disable interpretation of backslash escapes (default)|  
 ```
-OSC@OSC:~$ echo -n "Hello, "
+osc@osc:~$ echo -n "Hello, "
 echo "World!"
 Hello, World!
 ```
 ```
-OSC@OSC:~$ echo -e "Hello\nWorld"
+osc@osc:~$ echo -e "Hello\nWorld"
 Hello
 World
 ```
 ```
-OSC@OSC:~$ echo -E "Hello\nWorld"
+osc@osc:~$ echo -E "Hello\nWorld"
 Hello\nWorld
 ```
 
@@ -46,14 +46,14 @@ Hello\nWorld
 
 Before:
 ```
- OSC@OSC:~$ echo Hello World
+ osc@osc:~$ echo Hello World
  Hello World
- OSC@OSC:~$ clear
+ osc@osc:~$ clear
  ```
   
 After:
 ```
- OSC@OSC:~$ 
+ osc@osc:~$ 
 
 
 
@@ -68,10 +68,10 @@ ___
 An absolute pathname begins with the root directory and follows the tree branch by branch until the path to the desired directory or file is completed.  
 For example, there is a directory on our system in which most of our system's programs are installed. The directory’s pathname is /usr/bin. This means from the root directory (represented by the leading slash in the pathname) there is a directory called "usr" which contains a directory called "bin".
 ```
- OSC@OSC:~$ cd /usr/bin
- OSC@OSC:/usr/bin$ pwd
+ osc@osc:~$ cd /usr/bin
+ osc@osc:/usr/bin$ pwd
  /usr/bin
- OSC@OSC:/usr/bin$
+ osc@osc:/usr/bin$
  ```
 
 ##### Relative Path :
@@ -80,15 +80,15 @@ For example, there is a directory on our system in which most of our system's pr
   
   *  the working directory here is "usr"
   ```
-  OSC@OSC:/usr/$ cd ./bin
- OSC@OSC:/usr/bin$ pwd
+  osc@osc:/usr/$ cd ./bin
+ osc@osc:/usr/bin$ pwd
  /usr/bin
  ```
    
  *  In almost all cases, we can omit the "./"  
  ```
-  OSC@OSC:/usr/$ cd bin
- OSC@OSC:/usr/bin$ pwd
+  osc@osc:/usr/$ cd bin
+ osc@osc:/usr/bin$ pwd
  /usr/bin
  ```
 
@@ -98,8 +98,8 @@ For example, there is a directory on our system in which most of our system's pr
  **Syntax** : `pwd`.  
 
 ```  
-  OSC@OSC:~/Downloads$ pwd
-  /home/OSC/Downloads
+  osc@osc:~/Downloads$ pwd
+  /home/osc/Downloads
  ```
 
 
@@ -109,13 +109,13 @@ For example, there is a directory on our system in which most of our system's pr
  * **ls** : List directory contents.  
  **Syntax** : `ls [option] [file]`
  ```. 
-  OSC@OSC:~$ ls
+  osc@osc:~$ ls
   Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
  ```
  * Besides the current working directory, we can specify the directory to list:
  ```
- OSC@OSC:~$ ls /home
- OSC
+ osc@osc:~$ ls /home
+ osc
  ```
  | Option | Usage |
 |--------|-------|
@@ -130,8 +130,8 @@ To change our working directory (where we are standing in our tree-shaped maze) 
 the cd command.  
 **Syntax** : `cd path_name(absolute or relative)`. 
 ``` 
- OSC@OSC:~$ cd /home/OSC/Downloads
- OSC@OSC:~/Downloads$
+ osc@osc:~$ cd /home/OSC/Downloads
+ osc@osc:~/Downloads$
 ```
  * Now ,our working directory here is Downloads.
 
@@ -147,7 +147,7 @@ the cd command.
  **Syntax** : `cat [option] [file]
 `.
  ```
-  OSC@OSC:~/Documents$ cat myFile
+  osc@osc:~/Documents$ cat myFile
   hello world
  ```
  | Option | Usage |
@@ -160,13 +160,13 @@ the cd command.
  * **file** : Determine file type.   
  **Syntax** : `file file_name`.
  ```
-  OSC@OSC:~/Documents$ file myFile
+  osc@osc:~/Documents$ file myFile
   myFile: ASCII text
  ```
      
  * **type** :it is used to find out whether it is built-in or external binary file.  
  **Syntax** : type file_name.  
  ```
-  OSC@OSC:~$ type cd
+  osc@osc:~$ type cd
   cd is a shell builtin
  ```
