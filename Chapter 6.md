@@ -4,9 +4,9 @@
 
 A package manager in Linux is a tool or a set of tools designed to simplify the process of installing, updating, configuring, and removing software packages on a Linux system. Linux distributions use different package managers, and the choice of package manager often depends on the distribution's specific package management system.
 
-## What is a Package
+## What is a Package?
 
-A package refers to a compressed archive file containing software, application, or a set of related files along with metadata. These packages are used for easy distribution, installation, and management of software on Linux-based systems. Different Linux distributions have their own package management systems, and the package format may vary among them.
+A package refers to a compressed archive file containing software, an application, or a set of related files along with metadata. These packages are used for easy distribution, installation, and management of software on Linux-based systems. Different Linux distributions have their own package management systems, and the package format may vary among them.
 
 The two most common package management systems are:
 
@@ -27,7 +27,7 @@ The contents of an `RPM` package and `DPKG` package typically include:
 * **License information:** Details about the software's licensing terms.
 * **pre-installation, post-installation scripts:** Custom scripts executed before and after installation to perform additional tasks.
 
-## How Does the Package Manager Work
+## How Does the Package Manager Work?
 
 The general working principles of a package manager can vary slightly depending on the specific operating system, but the core concepts are similar. Here's a general overview of how a package manager works:
 
@@ -44,9 +44,9 @@ The general working principles of a package manager can vary slightly depending 
 ## Commands
 
 * The `apt` command is a package management tool used in **Debian-based** Linux distributions, such as Ubuntu.
-* The `dnf` command is a package management tool used in **Red Hat-based** Linux distributions, such as Fedora and CentOS. It is the successor to yum.
+* The `dnf` command is a package management tool used in **Red Hat-based** Linux distributions, such as Fedora and CentOS. It is the successor to `yum`.
 
-Two previous commands allow users to install, update, upgrade, and manage software packages on their system.
+The two previous commands allow users to install, update, upgrade, and manage software packages on their system.
 
 Here are some commonly used `dnf` and `apt` commands:
 
