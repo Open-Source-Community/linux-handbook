@@ -1,21 +1,21 @@
 # Understanding the File System
 
-In Linux, most of the operations are performed on files. And to handle these files Linux has directories also known as folders which are maintained in a tree-like structure. Though, these directories are also a type of file themselves.
+In Linux, most of the operations are performed on files. And to handle these files, Linux has directories, also known as folders, which are maintained in a tree-like structure. Though these directories are also a type of file.
 
-Linux has 3 types of files:
+Linux has three types of files:
 
-- **Regular Files:** It is the common file type in Linux. it includes files like – text files, images, binary files, etc. Such files can be created using the `touch` command. They consist of the majority of files in the Linux/UNIX system. The regular file contains ASCII or Human Readable text, executable program binaries, program data and much more.
+- **Regular Files:** It is the most common file type in Linux. It includes files like – text files, images, binary files, etc. Such files can be created using the `touch` command. They consist of the majority of files in the Linux/UNIX system. The regular file contains ASCII, or Human-readable text, executable program binaries, program data, and much more.
 
-- **Directories:** These are the files that store the list of file names and the related information. The root directory `/` is the base of the system, `/home/` is the default location for user’s home directories, /bin for Essential User Binaries, `/boot` – Static Boot Files, etc. We could create new directories with `mkdir` command.
+- **Directories:** These are the files that store the list of file names and the related information. The root directory `/` is the base of the system, `/home/` is the default location for the user’s home directories, `/bin` is for Essential User Binaries, `/boot` is for static boot files, etc. We could create new directories with `mkdir` command.
 
-- **Special Files:** Represents a real physical device such as a printer which is used for IO operations. Device or special files are used for device Input/Output on UNIX and Linux systems. You can see them in a file system like an ordinary directory or file.
+- **Special Files:** Represents a real physical device, such as a printer, which is used for IO operations. Devices or special files are used for device Input/Output on UNIX and Linux systems. You can see them in a file system like an ordinary directory or file.
 
 ## Creating Directories
 
 `mkdir [OPTION] DIRECTORY`
 : Creates a new directory, provided it doesn't exists.
 
-You can create a new directory his name is `Test`:
+You can create a new directory whose name is `Test`:
 
 ```bash
 osc@osc:~$ mkdir Test
@@ -24,7 +24,7 @@ osc@osc:~$ mkdir Test
 `mkdir -p Directory/SubDirectory1/SubDirectory2`
 : This command will create nested directories.
 
-You can reate nested directories, `world` which is inside the `hello` which is inside the `program`:
+You can create nested directories, `world`, which is inside the `hello`, which is inside the `program`:
 
 ```bash
 osc@osc:~$ mkdir -p program/hello/world
@@ -35,13 +35,13 @@ osc@osc:~$ mkdir -p program/hello/world
 `touch FILE`
 : This command will create a new file.
 
-To Create a new files `file1.txt` , `file2.txt` , `file3.txt`:
+To Create a new files `file1.txt`, `file2.txt`, `file3.txt`:
 
 ```bash
 osc@osc:~$ touch file1.txt file2.txt file3.txt
 ```
 
-## Renaming & Moving Files
+## Renaming and Moving Files
 
 `mv [OPTION] SOURCE DESTINATION`
 : Moves a file to a new location.
@@ -60,18 +60,18 @@ osc@osc:~$ mv test/file1 .
 
 Moving and renaming are both just adjusting the location and name for an existing item.
 
-You can rename `file1.txt` into the `file2.txt`:
+You can rename `file1.txt` into `file2.txt`:
 
 ```bash
 osc@osc:~$ mv file1.txt file2.txt
 ```
 
-## Copying Files & Directories
+## Copying Files and Directories
 
 `cp [OPTION] SOURCE DESTINATION`
 : Makes a new copy of an existing item.
 
-*The following command*, Copies `source.txt` contents to a new file called `copy.txt`.
+*The following command*, copies `source.txt` contents to a new file called `copy.txt`.
 
 ```bash
 osc@osc:~$ cp source.txt copy.txt
@@ -88,7 +88,7 @@ osc@osc:~$ cp source.txt copy.txt
 osc@osc:~$ cp -r test1 test2
 ```
 
-## Removing Directories & Files
+## Removing Directories and Files
 
 `rm [OPTION] FILE`
 : Deletes a file.
@@ -120,7 +120,7 @@ osc@osc:~$ rm -r test
 | Command | Description |
 |---------|-------------|
 | `rm FILE` | Deletes a file. |
-| `rm -f FILE` | Deletes by force and don't prompt the user. |
+| `rm -f FILE` | Deletes by force and doesn't prompt the user. |
 | `rm -r DIRECTORY` | Deletes a non-empty directory. |
 | `rm -d DIRECTORY` | Deletes an empty directory. |
 
@@ -180,7 +180,7 @@ cp (1)               - copy files and directories
 
 - Most commands have the `--help` command argument or option.
 
-Get more help on the **cp** command by typing:
+Get more help on the `cp` command by typing:
 
 ```.
 osc@osc:~$ cp --help
