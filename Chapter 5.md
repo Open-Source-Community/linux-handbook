@@ -2,7 +2,7 @@
 
 Data compression is the process of encoding or modifying data using functions or an algorithm to reduce its size. Fundamentally, it involves re-encoding information using fewer bits than the original representation.
 
-Data compression is important for reducing file size to be transferred easily and use less space when stored.
+Data compression is important for reducing file size so that files can be transferred easily and use less space when stored.
 
 ## Compression
 
@@ -13,21 +13,21 @@ Files in Linux can be compressed or decompressed using the `gzip` tool.
 
 Compressed and replaced with the compressed file `filename.gz`.
 
-You can decompress files compressed by `gzip` by adding flag `-d` to the command so it becomes `gzip -d filename.gz`.
+You can decompress files compressed by `gzip` by adding the flag `-d` to the command, so it becomes `gzip -d filename.gz`.
 
-There are plenty of flags that can be used and there is some of them
+There are plenty of flags that can be used, and there are some of them:
 
 | Option | Usage |
 |--------|-------|
 | `-k` | Keeps the original file and makes a new file for the compressed one. |
-| `-l` | For compressed files it show: compressed size, uncompressed size, the ratio between them. |
-| `-r` | Used in directories to recursively compress all files inside it. |
+| `-l` | For compressed files it show: compressed size, uncompressed size, and the ratio between them. |
+| `-r` | Used in directories to recursively compress all files inside them. |
 
 ```bash
 osc@osc:-$ gzip -r Directory
 ```
 
-All files within this directory is going to be compressed.
+All files within this directory are going to be compressed.
 
 | Option | Usage |
 |--------|-------|
@@ -38,7 +38,7 @@ All files within this directory is going to be compressed.
 
 ## Archiving
 
-Process of bundling multiple files or directories into a single file for future reference. Archiving directories can help in compressing them and save storage.
+Process of bundling multiple files or directories into a single file for future reference. Archiving directories can help compress them and save storage.
 
 `tar [OPTION] ARCHIVE FILE...`
 : Archives files or directories.
@@ -58,7 +58,7 @@ Process of bundling multiple files or directories into a single file for future 
 osc@osc:-$ tar -czf Directory.tar.gz Directory
 ```
 
-This example will creat a new archive for Directory called `Directory.tar.gz` then commpress it using `gzip`.
+This example will create a new archive for Directory called `Directory.tar.gz`, then compress it using `gzip`.
 
 ```bash
 osc@osc:-$ tar -uf Directory.tar file.txt
@@ -66,4 +66,4 @@ osc@osc:-$ tar -uf Directory.tar file.txt
 
 Add `file.txt` to the existing archive `Directory.tar`
 
-> **Note:** `.tar` and `.gz` are prefered for users but its not mandatory and not used by the computer.
+> **Note:** `.tar` and `.gz` are preferred for users, but they are not mandatory or used by the computer.
