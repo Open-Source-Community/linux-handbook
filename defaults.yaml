@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+
+input-files:
+  - "Chapter 3.md"
+  - "Chapter 4.md"
+  - "Chapter 5.md"
+  - "Chapter 6.md"
+include-in-header:
+  - "./tex/fancyhdr.tex"
+  - "./tex/chapters.tex"
+  - "./tex/codeblocks.tex"
+  - "./tex/backqoutes.tex"
+  - "./tex/tables.tex"
+output-file: "Linux: Command and Conquer.pdf"
+metadata-file: "./meta.yaml"
+pdf-engine: xelatex
+from: markdown_strict+pipe_tables+backtick_code_blocks+definition_lists
+table-of-contents: true
+number-sections: true
+listings: true
+highlight-style: monochrome
+variables:
+  secnumdepth: 0
+  linkcolor: blue
+  geometry: a5paper
+  documentclass: report
