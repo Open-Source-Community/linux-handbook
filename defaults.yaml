@@ -24,4 +24,6 @@ variables:
   secnumdepth: 0
   linkcolor: blue
   geometry: a5paper
-  documentclass: report
+  documentclass: book
+  classoption:
+    - oneside
