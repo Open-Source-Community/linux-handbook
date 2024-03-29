@@ -1,0 +1,16 @@
+\usepackage{xcolor}
+\usepackage[many]{tcolorbox}
+\tcbset{
+    sharp corners,
+    colback = white,
+    before skip = 0.2cm,    % add extra space before the box
+    after skip = 0.5cm      % add extra space after the box
+}
+\newtcolorbox{myquote}{
+    sharpish corners, % better drop shadow
+    boxrule = 0pt,
+    toprule = 4.5pt, % top rule weight
+    enhanced,
+    fuzzy shadow = {0pt}{-2pt}{-0.5pt}{0.5pt}{black!35} % {xshift}{yshift}{offset}{step}{options} 
+}
+\renewenvironment{quote}{\begin{myquote}}{\end{myquote}}
