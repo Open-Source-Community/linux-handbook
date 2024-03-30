@@ -10,38 +10,46 @@ Linux has three types of files:
 
 - **Special Files:** Represents a real physical device, such as a printer, which is used for IO operations. Devices or special files are used for device Input/Output on UNIX and Linux systems. You can see them in a file system like an ordinary directory or file.
 
-## Creating Directories
-
-`mkdir [OPTION] DIRECTORY`
-: Creates a new directory, provided it doesn't exists.
-
-You can create a new directory whose name is `Test`:
-
-```bash
-osc@osc:~$ mkdir Test
-```
-
-`mkdir -p Directory/SubDirectory1/SubDirectory2`
-: This command will create nested directories.
-
-You can create nested directories, `world`, which is inside the `hello`, which is inside the `program`:
-
-```bash
-osc@osc:~$ mkdir -p program/hello/world
-```
-
-## Creating Files
+## Manipulating Files and Directories
 
 `touch FILE`
-: This command will create a new file.
+: Creates a new file; 
+: if the file exists, it updates the timestamp.
 
 To Create a new files `file1.txt`, `file2.txt`, `file3.txt`:
 
 ```bash
 osc@osc:~$ touch file1.txt file2.txt file3.txt
+osc@osc:~$ ls 
+file1.txt file2.txt file3.txt
 ```
 
-## Renaming and Moving Files
+`mkdir [OPTION] DIRECTORY`
+: Creates a new directory,
+: provided it doesn't exists.
+
+You can create a new directory whose name is `Test`:
+
+```bash
+osc@osc:~$ mkdir Test
+osc@osc:~$ ls
+Test
+```
+
+`mkdir -p Directory/SubDirectory1/SubDirectory2`
+: Creates nested directories.
+
+You can create nested directories, `world`, which is inside the `hello`, which is inside the `program`:
+
+```bash
+osc@osc:~$ mkdir -p program/hello/world
+osc@osc:~$ ls
+program
+osc@osc:~$ ls program/
+hello
+osc@osc:~$ ls program/hello
+world
+```
 
 `mv [OPTION] SOURCE DESTINATION`
 : Moves a file to a new location.
@@ -49,46 +57,66 @@ osc@osc:~$ touch file1.txt file2.txt file3.txt
 Move `file1` into the `Test` directory:
 
 ```bash
+osc@osc:~$ ls
+Test file1
 osc@osc:~$ mv file1 Test
+osc@osc:~$ ls
+Test
+osc@osc:~$ ls Test
+file1
 ```
 
-You can move that file back to your home directory by using the **dot reference** `.` to refer to the current directory. Make sure you’re in your `home` directory, and then run the `mv` command:
+You can move that file back to your home directory by using the **dot reference** '`.`' to refer to the current directory. Make sure you’re in your `home` directory, and then run the `mv` command:
 
 ```bash
 osc@osc:~$ mv test/file1 .
+osc@osc:~$ ls
+Test file1
 ```
 
 Moving and renaming are both just adjusting the location and name for an existing item.
 
-You can rename `file1.txt` into `file2.txt`:
+You can rename `file1` into `file2`:
 
 ```bash
-osc@osc:~$ mv file1.txt file2.txt
+osc@osc:~$ ls
+file1
+osc@osc:~$ mv file1 file2
+osc@osc:~$ ls
+file2
 ```
-
-## Copying Files and Directories
 
 `cp [OPTION] SOURCE DESTINATION`
 : Makes a new copy of an existing item.
 
-*The following command*, copies `source.txt` contents to a new file called `copy.txt`.
+Copies `source.txt` contents to a new file called `copy.txt`.
 
 ```bash
+osc@osc:~$ ls
+source.txt
+osc@osc:~$ cat source.txt
+I am a text file!
 osc@osc:~$ cp source.txt copy.txt
+osc@osc:~$ ls
+source.txt copy.txt
+osc@osc:~$ cat copy.txt
+I am a text file!
 ```
 
 `cp -r SOURCE_DIRECTORY DESTINATION`
-: Copies entire directories
+: Copies entire directories.
 
-- You must include the `-r` option to the command. This stands for “recursive”, as it copies the directory, plus all of the directory’s contents.
+> **Note:** You must include the `-r` option to the command. This stands for “recursive”, as it copies the directory, plus all of the directory’s contents.
 
-*The following command*, Copies the `test1` directory structure to a new structure called `test2`.
+Copies the `test1` directory structure to a new structure called `test2`.
 
 ```bash
+osc@osc:~$ ls
+test1
 osc@osc:~$ cp -r test1 test2
+osc@osc:~$ ls
+test1 test2
 ```
-
-## Removing Directories and Files
 
 `rm [OPTION] FILE`
 : Deletes a file.
@@ -96,16 +124,20 @@ osc@osc:~$ cp -r test1 test2
 To remove `test` file from the directory:
 
 ```bash
+osc@osc:~$ ls
+test
 osc@osc:~$ rm test
+osc@osc:~$ ls
 ```
 
 `rmdir [OPTIONS] DIRECTORY`
 : Removes empty directories.
 
-- This will only succeed if there is nothing in the directory in question. Let's remove `example` directory within the `test` directory:
-
 ```bash
+osc@osc:~$ ls test/
+example
 osc@osc:~$ rmdir test/example
+osc@osc:~$ ls test/
 ```
 
 `rm -r DIRECTORY`
@@ -114,15 +146,17 @@ Removes a **non-empty** directory.
 To remove the `test` directory and everything within it:
 
 ```bash
+osc@osc:~$ ls
+test
 osc@osc:~$ rm -r test
+osc@osc:~$ ls
 ```
 
-| Command | Description |
+| Option | Description |
 |---------|-------------|
-| `rm FILE` | Deletes a file. |
-| `rm -f FILE` | Deletes by force and doesn't prompt the user. |
-| `rm -r DIRECTORY` | Deletes a non-empty directory. |
-| `rm -d DIRECTORY` | Deletes an empty directory. |
+| `-f` | Deletes by force and doesn't prompt the user. |
+| `-r DIRECTORY` | Deletes a non-empty directory. |
+| `-d DIRECTORY` | Deletes an empty directory. |
 
 ## Getting Help
 
@@ -156,6 +190,17 @@ DESCRIPTION
 ...
 ```
 
+The following conventions apply to the SYNOPSIS section and can be used as a guide in other sections.
+
+| Convention | Usage |
+| ---------- | ----- |
+| **bold text** | Type exactly as shown. |
+| *italic text* | Replace with appropriate argument. |
+| [-abc] | Any or all arguments within [ ] are optional. |
+| -a`|`-b |  Options delimited by `|` cannot be used together. |
+| argument ... | Argument is repeatable. |
+| [expression] ... | Entire expression within [ ] is repeatable. |
+
 `apropos`
 : Lists several commands that match the keyword you used.
 
@@ -178,7 +223,7 @@ cp (1)               - copy files and directories
 `--help`
 : Displays helpful information about how a command is used and its arguments in a simplified manner.
 
-- Most commands have the `--help` command argument or option.
+> **Note:** Most commands have the `--help` command argument or option.
 
 Get more help on the `cp` command by typing:
 
