@@ -2,36 +2,33 @@
 
 ## Philosophy
 
-Open Source is a software development movement that encourages on open collaboration, freely development .. belief that the source code of software should be available to anyone & this movement has improved the software industry to an unlimited way.
+Open Source is a software development movement that encourages open collaboration, free development, and the belief that the source code of software should be available to anyone. This movement has improved the software industry in an unlimited way.
 
 ## Open Source Community ASU
 
-Open source Community ASU is a community started in 2013, with a group of students who were passionate about the idea of open source, linux & software development.
+Open source community ASU is a community started in 2013 by a group of students who were passionate about the ideas of open source, Linux, and software development.
 
-Our vision & duty is to spreed the importance of using open source tools & developing your softskills, as a way to improve your skills for your career path.
+Our vision and duty are to emphasize the importance of using open source tools and developing your soft skills as a way to improve your skills for your career path.
 
-### Here's Fun Facts about us:
+### Fun Facts
 
-- We started with only 7 students (Geeks) in 2013, at "Said Abdelwahab Hall" with labtobs & banners: telling other students about LINUX, why to use it & any Linux support for them.
+- We started with only 7 students (Geeks) in 2013, at Said Abdelwahab Hall, with laptops and banners, telling other students about Linux.
 
-- We are the first Open Source Community created in Egypt & contributed in open source events like "Hacktober-fest" for open source contributions.
+- We are the first open source community created in Egypt and have contributed to open source events like Hacktoberfest.
 
-- We are not only a technical community, we also have committees for soft skills & designing (10 committees in total) such as:
-    - Blender 3D committee
-    - Ui/Ux & Design committee
-    - Content Creation committee (CCC)
+- We are not only a technical community; we also have committees for soft skills and design, such as:
+    - Blender 3D Committee
+    - UI/UX & Design Committee
+    - Content Creation Committee (CCC)
 
-- We usually held events & workshops:
+- We usually hold events and workshops:
     - Get to Git' & Get to Linux' events
-    - Linux Distributions Party
+    - Linux Distribution Party
     - El Salakhana
     - OSC Summer Training
-    - Docker Workshop - last MidYear holiday 2024
-    - Technical Workshops: Linux | Game development | Web
-    - Non-Technical Workshops: Blender | Ux & Design | CCC workshops
+    - Technical Workshops: Linux, Docker, Game Development, and Web
+    - Non-Technical Workshops: Blender, UI/UX & Design, CCC
 
-- We are the community who created "The Employment Fair" 1st edition in 2017, it was held in FCIS then replaced in the university campus.
+- We are the community that created Employment Fair back in 2017. It was held at FCIS back then.
 
-- We use only open-source tools as a way to spreed the importance & capabilities of open source tools.
-
-Then days after days, Years after years, here we are celebrating our 10s year, hope to give more value for open source & Ain Shams community.
+- We use only open-source tools as a way to emphasize the importance and capabilities of open source tools.
