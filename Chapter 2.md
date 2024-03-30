@@ -2,7 +2,7 @@
 
 ## Operating System (OS)
 
-It is a system program that provides an interface between the user and the computer, as it manages all the software and  hardware on the computer.
+It is a system program that provides an interface between the user and the computer, as it manages the hardware and software running on it.
 
 ### Resource Management
 
@@ -28,9 +28,9 @@ Keep in mind that there is a difference between Linux as an operating system and
 
 ## GNU Project
 
-GNU is an acronym اختصار for: GNU’s Not UNIX. The founder of the GNU project is a software engineer and researcher named Richard Stallman.
+GNU is an acronym for: GNU’s Not UNIX. The founder of this project is a software engineer and researcher named Richard Stallman.
 
-The release of the GNU project in 1983 was marked as one of the key events in the history of open source. The project aimed to create a free Unix-like operating system, and laid the groundwork for the free software movement. Stallman's philosophy of software freedom—freedom to use, study, modify, and distribute software—inspired a new generation of developers who believed in the power of open collaboration.
+The release of the GNU project in 1983 was marked as one of the key events in the history of open source. The project aimed to create a free Unix-like operating system, and laid the groundwork for the free software movement. Stallman's philosophy of software freedom—freedom to use, study, modify, and distribute software— inspired a new generation of developers who believed in the power of open collaboration.
 
 ## Popular Linux Distributions
 
