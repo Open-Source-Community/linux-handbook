@@ -1,60 +1,43 @@
 # OS and Kernel
 
-## Operating system (OS)
+## Operating System (OS)
 
-Is system program that provides interface between user and computer .. as it manages all the software(SW) & hardware(HW) on the computer.
+It is a system program that provides an interface between the user and the computer, as it manages all the software and  hardware on the computer.
 
-## How OS manages apps?
+### Resource Management
 
-there are several different computer programs running at the same time, need to access your computer's central processing unit (CPU), memory, and storage .. so OS coordinates all this to make sure every program gets only it's need.
+There are several different computer programs running at the same time that need access to your CPU, memory, and storage, so the OS coordinates all this to make sure that every program gets only what it needs.
 
-## What is Kernel & How it works?
+## Kernel
 
 A kernel is the core component of the operating system.
 
-- It's the first program of operating system that is loaded into the main memory to start the working of system .. and remains in memory till the system is shut down.
+It's the first program of the operating system that is loaded into the main memory and remains in memory until the system is shut down.
 
-- Kernal acts as a bridge between application SW & HW of the system .. as it directly communicates with the HW & let it know which SW app has requested.
+The kernel acts as a bridge between the applications and the hardware, as it directly communicates with the hardware.
 
-![OS-Kernal Photo](https://raw.githubusercontent.com/SalmaAlassal/BeRoot/main/Introduction%20to%20Linux/imgs/OS-Kernel.png)
+![os_hierarchy](https://raw.githubusercontent.com/SalmaAlassal/BeRoot/main/Introduction%20to%20Linux/imgs/OS-Kernel.png)
 
 ### Creator
 
-Kernal has been created by one of the greatest developers ever called: Linus Torvalds
+The Linux kernel was created by Linus Torvalds, one of the greatest developers.
 
-In 1991, Linus Torvalds, a young Finnish computer science student, released the first version of the Linux kernel—a core component of the GNU/Linux operating system. Unlike proprietary operating systems like Windows or MacOS, Linux was open source, meaning anyone could view, modify, and distribute the source code. This open model of development attracted a community of developers who contributed their time and expertise to improve the software.
+In 1991, Linus Torvalds, a young Finnish computer science student, released the first version of the Linux kernel, a core component of the GNU/Linux operating system. Unlike proprietary operating systems like Windows or MacOS, Linux was open source, meaning anyone could view, modify, and distribute the source code. This open model of development attracted a community of developers who contributed their time and expertise to improve the software.
 
-But linux OS itself was created by a collaboration work by: GNU & Linus.
+Keep in mind that there is a difference between Linux as an operating system and the Linux kernel. Linus only created the latter; the former was created in collaboration with the GNU project and Linus.
 
-But the question here, What is GNU?
+## GNU Project
 
-## GNU
+GNU is an acronym اختصار for: GNU’s Not UNIX. The founder of the GNU project is a software engineer and researcher named Richard Stallman.
 
-GNU is an acronym اختصار for: GNU’s Not UNIX. The founder of the GNU project is software engineer & researcher called: Richard Stallman.
-
-The GNU project was started as a replacement for UNIX operating system , to produce a free software alternative to Unix, and were able to produce most of the programs of the OS but not the Kernel (as it was hard to implement acually).
-
-And one of the key events in the history of open source was the release of the GNU Project in 1983 by Richard Stallman. The GNU Project aimed to create a free Unix-like operating system, and laid the groundwork for the free software movement. Stallman's philosophy of software freedom—freedom to use, study, modify, and distribute software—inspired a new generation of developers who believed in the power of open collaboration.
-
-Then after a while, Linus Torvalds came with the Kernel he produced and share it with GNU & Richard Stallman, and it worked very effectively.
+The release of the GNU project in 1983 was marked as one of the key events in the history of open source. The project aimed to create a free Unix-like operating system, and laid the groundwork for the free software movement. Stallman's philosophy of software freedom—freedom to use, study, modify, and distribute software—inspired a new generation of developers who believed in the power of open collaboration.
 
 ## Popular Linux Distributions
 
-- Ubuntu
-- Fedora OS
-- Linux Mint
-- Pop_OS!
-- Red Hat Linux
-- Arch
-- Manjaro
-
-## Diffrences between distros
-
-- Usual users (Ubuntu - Pop OS! - mint Linux)
-- Developer (Fedora Linux - Manjaro - Ubuntu - other distros )
-- Artists & music production (Arcolinux)
-- Coporate org. (Red Hat Linux)
-- Lightweight flexible Linux distr (Arch Linux)
-- Cyper Security specialists (Kali Linux)
-
-There are also other Linux Distros that are useful for this usages ⬆️, but those are the most popular.
+| Intended Use Case | Distribution |
+| ----------------- | ------------ |
+| Usual users | Ubuntu - Pop OS! |
+| Developer | Fedora - Ubuntu |
+| Artists & Music Producers | Ubuntu Studio |
+| Corporate Organizations | Red Hat Linux - Fedora |
+| Cyber Security | Kali Linux |
