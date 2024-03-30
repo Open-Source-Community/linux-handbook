@@ -10,13 +10,13 @@ A package refers to a compressed archive file containing software, an applicatio
 
 The two most common package management systems are:
 
-* `RPM (Red Hat Package Manager)`: RPM is used by Red Hat-based distributions such as Red Hat Enterprise Linux (RHEL), Fedora, CentOS, and others.
+* **RPM (Red Hat Package Manager)**: RPM is used by Red Hat-based distributions such as Red Hat Enterprise Linux (RHEL), Fedora, CentOS, and others.
 
-* `DPKG (Debian Package)`: DPKG is used by Debian-based distributions such as Debian, Ubuntu, and their derivatives.
+* **DPKG (Debian Package)**: DPKG is used by Debian-based distributions such as Debian, Ubuntu, and their derivatives.
 
 In addition to these package management systems, many Linux distributions also use package managers such as `YUM`, `APT`, `Zypper`, and others to handle dependencies, updates, and installations.
 
-## Contents of Packages
+## Package Contents
 
 The contents of an `RPM` package and `DPKG` package typically include:
 
@@ -27,24 +27,21 @@ The contents of an `RPM` package and `DPKG` package typically include:
 * **License information:** Details about the software's licensing terms.
 * **pre-installation, post-installation scripts:** Custom scripts executed before and after installation to perform additional tasks.
 
-## How Does the Package Manager Work?
+## Inner Workings Overview
 
 The general working principles of a package manager can vary slightly depending on the specific operating system, but the core concepts are similar. Here's a general overview of how a package manager works:
 
-**1) Package Repository:**
+- **Package Repository:**
+  * A package manager relies on a centralized repository or multiple repositories where software packages are stored.
+  * Each package in the repository contains the application or library, along with metadata like version information, dependencies, and configuration files.
 
-* A package manager relies on a centralized repository or multiple repositories where software packages are stored.
-* Each package in the repository contains the application or library, along with metadata like version information, dependencies, and configuration files.
-
-**2) Package Metadata:**
-
-- Metadata provides information about the software package, including its name, version number, dependencies, and a brief description.
-- Dependencies are other software packages that must be installed for the current package to work properly.
+* **Package Metadata:**
+  * Metadata provides information about the software package, including its name, version number, dependencies, and a brief description.
+  * Dependencies are other software packages that must be installed for the current package to work properly.
 
 ## Commands
 
-* The `apt` command is a package management tool used in **Debian-based** Linux distributions, such as Ubuntu.
-* The `dnf` command is a package management tool used in **Red Hat-based** Linux distributions, such as Fedora and CentOS. It is the successor to `yum`.
+The `apt`, and 'dnf' commands are package management tools used in Debian-based, and Red Hat-based Linux distributions respectively, such as Ubuntu, Fedora, and CentOS.
 
 The two previous commands allow users to install, update, upgrade, and manage software packages on their system.
 
