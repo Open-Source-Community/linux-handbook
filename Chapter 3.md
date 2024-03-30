@@ -83,7 +83,7 @@ No matter what you want to access, where it is, it will somehow connect to the r
 
 The '`/`' character is also used as a directory separator in file names. For example, if `etc` is a subdirectory of the `/` directory, you could refer to that directory as `/etc`. Likewise, if the `/etc` directory contained a file named `issue`, you could refer to that file as `/etc/issue`.
 
-## Top Level Directories
+### Top Level Directories
 
 | Directory | Content / Description |
 | --------- | --------------------- |
