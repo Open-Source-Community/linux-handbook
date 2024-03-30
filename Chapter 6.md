@@ -16,7 +16,7 @@ The two most common package management systems are:
 
 In addition to these package management systems, many Linux distributions also use package managers such as `YUM`, `APT`, `Zypper`, and others to handle dependencies, updates, and installations.
 
-## Package Contents
+### Package Contents
 
 The contents of an `RPM` package and `DPKG` package typically include:
 
@@ -31,7 +31,7 @@ The contents of an `RPM` package and `DPKG` package typically include:
 
 The general working principles of a package manager can vary slightly depending on the specific operating system, but the core concepts are similar. Here's a general overview of how a package manager works:
 
-- **Package Repository:**
+* **Package Repository:**
   * A package manager relies on a centralized repository or multiple repositories where software packages are stored.
   * Each package in the repository contains the application or library, along with metadata like version information, dependencies, and configuration files.
 
