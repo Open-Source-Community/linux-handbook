@@ -2,7 +2,9 @@
 
 ## Philosophy
 
-Open Source is a software development movement that encourages open collaboration, free development, and the belief that the source code of software should be available to anyone. This movement has improved the software industry in an unlimited way.
+Open Source is a software development movement that encourages open collaboration, free development, and the belief that the source code of software should be available to anyone. 
+
+This movement has improved the software industry in an unlimited way.
 
 ## Open Source Community ASU
 
