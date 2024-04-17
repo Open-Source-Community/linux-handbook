@@ -3,6 +3,7 @@
 ---
 
 input-files:
+  - "Introduction.md"
   - "Acknowledgments.md"
 pdf-engine: xelatex
 from: markdown_strict+pipe_tables+backtick_code_blocks+definition_lists
